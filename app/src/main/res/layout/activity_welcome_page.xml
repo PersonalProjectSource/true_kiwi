@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/welcome_view"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="#fbffffff"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.optimus.kiwi.WelcomePage">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textColor="#FFFF"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="#ff1ec9ff"
+        android:id="@+id/game_btn"
+        android:text="New game" />
+
+    <TextView
+        android:layout_marginLeft="175dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/add_friend_btn"
+        android:textSize="20dp"
+        android:textColor="#FFFF"
+        android:background="#ff1ec9ff"
+        android:text="Add friend" />
+
+    <ImageView
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="35dp"
+        android:src="@drawable/stats" />
+</RelativeLayout>

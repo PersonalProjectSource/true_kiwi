@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.optimus.kiwi">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_aw"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HomePage"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FindPlayer"
+            android:label="@string/title_activity_find_player" />
+        <activity
+            android:name=".AddQuestion"
+            android:label="@string/title_activity_add_question" />
+        <activity
+            android:name=".StartGame"
+            android:label="@string/title_activity_start_game" />
+        <activity
+            android:name=".ContactUs"
+            android:label="@string/title_activity_contact_us" />
+        <activity
+            android:name=".WelcomePage"
+            android:label="@string/title_activity_welcome_page"></activity>
+    </application>
+
+</manifest>
