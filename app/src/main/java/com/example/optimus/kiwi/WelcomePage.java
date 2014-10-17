@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Adapter;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -17,7 +17,7 @@ public class WelcomePage extends Activity {
     TextView startGame;
     TextView addFriend;
     ListView friendlist;
-    Adapter adapter;
+    ArrayAdapter<?> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,22 +30,41 @@ public class WelcomePage extends Activity {
         addFriend = (TextView) activityView.findViewById(R.id.add_friend_btn);
         friendlist = (ListView) activityView.findViewById(R.id.friendListView);
 
-        String[] values = new String[] { "Android", "iPhone", "WindowsMobile",
+        String[] values = new String[]{"Android", "iPhone", "WindowsMobile",
                 "Blackberry", "WebOS", "Ubuntu", "Windows7", "Max OS X",
                 "Linux", "OS/2", "Ubuntu", "Windows7", "Max OS X", "Linux",
                 "OS/2", "Ubuntu", "Windows7", "Max OS X", "Linux", "OS/2",
-                "Android", "iPhone", "WindowsMobile" };
+                "Android", "iPhone", "WindowsMobile"};
 
         final ArrayList<String> list = new ArrayList<String>();
         for (int i = 0; i < values.length; ++i) {
             list.add(values[i]);
         }
 
-        adapter = new StableArrayAdapter(this,
-                android.R.layout.simple_list_item_1, list);
-        listview.setAdapter(adapter);
 
+        ArrayList<String> userTab = new ArrayList<String>();
 
+        userTab.add("ADLM");
+        userTab.add("Optimus");
+        userTab.add("John");
+        userTab.add("Régis");
+        userTab.add("Adel");
+        userTab.add("Pierre");
+        userTab.add("Adrien");
+        userTab.add("ADLM");
+        userTab.add("Optimus");
+        userTab.add("John");
+        userTab.add("Régis");
+        userTab.add("Adel");
+        userTab.add("Pierre");
+        userTab.add("Adrien");
+
+        ListView h = (ListView) activityView.findViewById(R.id.friendListView);
+        ArrayAdapter adapt = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, userTab);
+
+        //CustomList custom = new CustomList(this, userTab);
+
+        h.setAdapter(adapt);
 
 
         startGame.setOnClickListener(new View.OnClickListener() {

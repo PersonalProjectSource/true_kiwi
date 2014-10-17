@@ -6,4 +6,8 @@
         <item name="android:windowNoTitle">true</item>
     </style>
 
+    <style name="coucou" parent="android:Theme.Holo.Light.DarkActionBar">
+
+    </style>
+
 </resources>
