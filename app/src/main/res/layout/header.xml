@@ -11,18 +11,20 @@
 
         <TextView
             android:layout_width="fill_parent"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
             android:layout_height="50dp"
             android:gravity="center_vertical"
             android:id="@+id/welcome_title"
             android:textSize="20dp"
-            android:textColor="#ffff3536"
-            android:background="#ff050c11"
-            android:text="QuiZZ Vrai fauX"/>
+            android:textColor="#ff1ec9ff"
+            android:background="#fffefeff"
+            android:text="QuiZZ Vrai fauX" />
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_alignParentRight="true"
-            android:src="@drawable/param_btn2"/>
+            android:src="@drawable/param_btn3" />
     </RelativeLayout>
 </RelativeLayout>
